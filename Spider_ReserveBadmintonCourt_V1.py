@@ -33,6 +33,7 @@ sPassword = input("密碼 :")
 delay = 0.1 #unit s
 url = 'https://nd01.xuanen.com.tw/MobileHome/MobileHome'  #網頁
 
+
 from selenium import webdriver
 driver = webdriver.Chrome('D:/chromedriver')
 driver.get(url)
