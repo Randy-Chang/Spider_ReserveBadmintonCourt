@@ -53,11 +53,11 @@ sleep(delay1)  #加入等待
 
 # 等待時間23:59開始預約場地
 # while(bIsWait):
-#     current_dateTime  = datetime.now()
-#     current_time = current_dateTime.strftime("%H:%M:%S")
-#     current_day = current_dateTime.day
-#     if(current_time >= '23:59:00'):
-#         bIsWait = False
+    # current_dateTime  = datetime.now()
+    # current_time = current_dateTime.strftime("%H:%M:%S")
+    # urrent_day = current_dateTime.day
+    # if(current_time >= '23:59:00'):
+    #     bIsWait = False
 
 # 填入帳號
 account = driver.find_element("xpath",'//*[@id="txt_Account"]')
@@ -81,12 +81,12 @@ sleep(delay1)  #加入等待
 driver.find_element("xpath", '//*[@id="label1"]').click()
 
 # 等待時間00:00開始預約場地
-while(bIsWait):
-    current_dateTime  = datetime.now()
-    current_time = current_dateTime.strftime("%H:%M:%S")
-    current_day = current_dateTime.day
-    if(current_time >= '00:00:00' and current_day > day_origin):
-        bIsWait = False
+# while(bIsWait):
+#     current_dateTime  = datetime.now()
+#     current_time = current_dateTime.strftime("%H:%M:%S")
+#     current_day = current_dateTime.day
+#     if(current_time >= '00:00:00' and current_day > day_origin):
+#         bIsWait = False
         
 # 點選 預約場地
 driver.find_element("xpath", '//*[@id="MainBlock"]/div[3]/div/div[3]/div[5]/div[2]').click()
